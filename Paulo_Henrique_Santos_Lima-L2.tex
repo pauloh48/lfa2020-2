@@ -1,0 +1,42 @@
+%!TEX TS-program = mypdflatex
+%===========================================================================
+%
+\documentclass[12pt]{article}
+
+% --------------------------------------------------
+% Insira os seus dados e do exercício escolhido:
+\def\discente{Paulo Henrique Santos Lima}
+\def\matricula{201702779}
+\def\aa{1}
+\def\exercicio{2}
+\def\myling{12} % Informe o número da linguagem selecionada.
+% --------------------------------------------------
+
+\usepackage[brazil]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[a4paper,top=1.5cm,bottom=1.5cm,left=2.0cm,right=1.5cm,nohead,nofoot]{geometry}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{enumitem}
+\usepackage{calc}
+\usepackage{xcolor}
+
+\newcommand{\concatL}{\ensuremath{{\scriptstyle\circ}}}
+
+\begin{document}
+\subsection*{Atividade AA-\aa\ (exercício \exercicio)}
+ \paragraph{\matricula -- \discente}
+%
+ \begin{itemize}
+  \item \textcolor{blue}{$\mathcal{L}_\myling = \{w\in\Sigma^*\ = \{0,1\}^*\mid$  w contém número par de ocorrências de 10$\}$.}
+%
+  \item  \textcolor{red}{Definição de $\mathcal{L}_\myling$ por conjuntos regulares:
+%
+  \begin{description}[topsep=0pt,noitemsep,labelwidth=\widthof{CR =},labelindent=2.5\labelwidth,leftmargin=*,align=right]
+   \item [CR($\mathcal{L}_\myling$) =] $\{\{0\}^*\concatL\{1\}^*\concatL\{10\}\concatL\{0\}^*\concatL\{1\}^*\concatL\{10\}\}^*\concatL\{\{0\}^*\concatL\{1\}^*\}$.
+  \end{description}
+  }
+% 
+ \end{itemize}
+\noindent\textbf{Obs.:} esta observação e os comandos de cor (``\verb|\textcolor{}{}|'') podem ser removidos da versão a ser submetida na plataforma Turing.
+\end{document}
